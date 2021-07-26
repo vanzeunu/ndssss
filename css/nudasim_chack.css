@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+body {width:100%; text-align: center;}
+
+h1 {margin-top:50px;}
+fieldset {width:80%; border:1px solid #fed32e; margin:0 auto;}
+legend {font-size:20px; padding:20px;}
+
+legend p {line-height:20px;}
+#btn {margin-bottom:20px;}
+
+

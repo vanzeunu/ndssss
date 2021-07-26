@@ -1,0 +1,46 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title #{pageTitle} | NOODASIM
+
+    body
+				nav         
+				    a(href="/")  HOME 
+				    a(href="/saved")  SAVED
+				    a(href="/addmember")  ADD 
+				    a(href="/search")  Edit/Delete
+				    a(href="/logout") LOGOUT
+
+				h1 create a member
+
+		    .addMemberBox        
+            form(action="/addmember" method="POST")
+                label(for="week") choose a day of meeting: 
+                select(name="dayOfWeek" id="week" required)
+                    option(value="") choose 
+                    option(value="MON") MON 
+                    option(value="TUE") TUE
+                    option(value="WED") WED
+                    option(value="THU") THU
+                    option(value="FRI") FRI
+                    option(value="SAT") SAT 
+                    option(value="SUN") SUN
+
+                label(for="memberName") Name:
+                input(type="text" name="name" placeholder="nickname" id="memberName" required)
+                
+                label(for="memberEmail") Email:
+                input(type="mail" name="email" id="memberEmail" placeholder="full email address")
+                
+                label(for="memberInning") start at:
+                input(type="number" id="memberInning" name="nthMeeting" scale=1 max=10 min=1 placeholder="inning" value=1 required)
+                
+                label(for="memberEntryFee") Entry fee:
+                input(type="number" name="entryFee" min=0 value=50000 placeholder="entry fee" id="memberEntryFee" required)
+                
+                input(type="text" name="createdBy" value="Song")
+
+                input(type="submit" value="ADD MEMBER" style={background: 'pink'})

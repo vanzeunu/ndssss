@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>누다심 공개집단 출석체크 로그인</title>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/nudasim.css">
+<script src="js/nudasim.js"></script>
+<style>
+	
+</style>
+</head>
+<body>
+	<div>
+		<img src="img/nudasim_logo.png" alt="누다심 로고">
+	</div>
+	<div>  
+		<h1>WELCOME</h1><br>
+		<h4>로그인 정보를 입력해 주세요.</h4>
+	  </div>
+	  <div>       
+		<form action="/login" method="POST"> 
+		  <input type="text" name="name" placeholder="아이디" required><br>
+		  <input type="password" name="password" placeholder="비밀번호" required><br>
+		  <input class="log" type="submit" value="로그인">
+		</form>
+			<div class="socialLogin">
+				<a href="/"><button>네이버 아이디로 로그인</button></a>
+			</div>
+	  </div>
+	  <div class="joinBox">
+		<br><h4>회원가입을 하시겠습니까?</h4>
+		<a href="/join"><button>회원가입</button></a>
+	  </div>
+</body>
+</html>

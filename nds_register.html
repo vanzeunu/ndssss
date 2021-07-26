@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/nudasim_chack.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/nudasim.js"></script>
+<title>누다심 공개집단 집단원 등록</title>
+
+<style>
+
+
+</style>
+
+</head>
+<body>
+	<h1>집단원 등록</h1>
+		<form action="join.php" method="post">
+			<fieldset>
+			<legend>집단원 정보</legend>
+				<p>이름 : <input type="text" size="7" maxlength="5" autofocus placeholder="이름"class="b"></p><br>
+				<p>금액 : <input type="text" size="7" id="money" value="50,000"></p><br>
+				<p>핸드폰 번호 : <input type="tel" type="text" size="14" pattern="[0-9][13]" autofocus placeholder="010-0000-0000" required name="tel"></p><br>
+				<p id="btn">
+					<input type="submit" value="저장">
+					<input type="reset" value="취소">
+				</p>
+			</fieldset>
+		</form>
+</body>
+</html>

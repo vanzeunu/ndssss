@@ -1,0 +1,44 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title #{pageTitle} | NOODASIM
+
+    body
+				nav         
+				    a(href="/")  HOME 
+				    a(href="/saved")  SAVED
+				    a(href="/addmember")  ADD 
+				    a(href="/search")  Edit/Delete
+				    a(href="/logout") LOGOUT
+
+				h1 attendance sheet
+
+				form(action="")      
+			        button(name="day" value="MON") MON
+                    button(name="day" value="TUE") TUE
+                    button(name="day" value="WED") WED
+                    button(name="day" value="THU") THU
+                    button(name="day" value="FRI") FRI
+                    button(name="day" value="SAT") SAT
+                    button(name="day" value="SUN") SUN
+
+				.startAttendanceBox
+		        .nthAttendanceBOX nth
+		        button START
+
+		    .attendanceSheet 
+		        ul
+		            li
+		                form(action="") 
+		                    button(value=member.name)=member.name
+                        div #{member.numberOfAbsence} 결석
+                        div #{member.entryFee} 참가비
+                        div #{member.earnedMoney} 원
+                        button(style={ background: 'red'}) Absence
+
+		    .finishAttendanceBox 
+		        a(href="/saved")  
+		            button DONE

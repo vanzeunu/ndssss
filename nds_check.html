@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>누다심 공개집단 출석 체크</title>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/nudasim.css">
+<script src="js/nudasim.js"></script>
+<style>
+	figure p {font-size:2rem; text-align: center;}
+</style>
+<script>
+    $(function(){
+var timer = setInterval(function(){
+	var now = new Date();
+	var hr = now.getHours();
+	var min = now.getMinutes();
+	var sec = now.getSeconds();
+	
+	if(hr>=10){
+		hNum=hr;
+	}else{
+		hNum="0"+hr;
+	};
+
+	if(min>=10){
+		mNum=min;
+	}else{
+		mNum="0"+min;
+	};
+	
+	if(sec>=10){
+		sNum=sec;
+	}else{
+		sNum="0"+sec;
+	};
+
+	$("p span").eq(0).text(hNum);
+	$("p span").eq(1).text(mNum);
+	$("p span").eq(2).text(sNum);},1000);
+
+var now = new Date();
+var hr = now.getHours();
+});
+</script>
+
+</head>
+<body>
+	<figure>
+        <p>
+            <span>00</span> : <span>00</span> : <span>00</span>
+        </p>
+    </figure>
+</body>
+</html>

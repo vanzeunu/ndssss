@@ -1,0 +1,59 @@
+s<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>누다심 공개집단 출석 체크</title>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/nudasim.css">
+<script src="js/nudasim.js"></script>
+
+<body>
+	<nav>         
+			<a href="/">HOME</a>
+            <a href="/saved">SAVED</a>
+            <a href="/addmember">ADD</a>
+            <a href="/search">Edit/Delete</a>
+            <a href="/logout">LOGOUT</a>
+		<h1>attendance sheet</h1>
+
+		<form action="">
+            <button name="day" value="MON">MON</button>
+            <button name="day" value="TUE">TUE</button>
+            <button name="day" value="WED">WED</button>
+            <button name="day" value="THU">THU</button>
+            <button name="day" value="FRI">FRI</button>
+            <button name="day" value="SAT">SAT</button>
+            <button name="day" value="SUN">SUN</button>
+        </form>
+            <ul class="startAttendanceBox">
+                <li class="nthAttendanceBOX">nth
+                <button>START</button>
+                </li>
+            </ul>
+        <div class="attendanceSheet">
+            <ul>
+                <li>
+                    <form action="">
+                        <button value="member" name="member">name</button>
+                        <div>결석</div>
+                        <div>참가비</div>
+                        <div>원</div>
+                    <button>Absence</button>
+                    </form>
+                </li>
+            </ul>
+        </div>  
+       
+        <div  class="finishAttendanceBox">
+            <a href="/saved"></a>
+            <button>DONE</button>
+        </div>
+
+    </nav>
+</body>
+</head>
+</html>

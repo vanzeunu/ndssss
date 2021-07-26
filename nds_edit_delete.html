@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>누다심 공개집단 출석 체크</title>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/nudasim.css">
+<script src="js/nudasim.js"></script>
+<style>
+    body {}
+    a {text-decoration:none; color:black;}
+
+
+</style>
+<body>
+	<nav>         
+    	<a href="/">HOME</a>
+        <a href="/saved">SAVED</a>
+        <a href="/addmember">ADD</a>
+        <a href="/search">Edit/Delete</a>
+        <a href="/logout">LOGOUT</a>
+        
+            <form action="">
+                <input type="text" placeholder="search by name" name="name">
+            </form>
+
+            <div class="searchedBox">
+                <ul>
+                    <li>
+                        <form method="POST" action="/search">
+                        <input type="text" name="memberName" value=findpeople.name>
+
+                        <label for="week">choose a day of meeting: </label>
+                        <select name="dayOfWeek" id="week" required>
+                            <option value=findpeople.dayOfweek></option>
+                            <option value="MON">MON</option>
+                            <option value="TUE">TUE</option>
+                            <option value="WED">WED</option>
+                            <option value="THU">THU</option>
+                            <option value="FRI">FRI</option>
+                            <option value="SAT">SAT</option>
+                            <option value="SUN">SUN</option>
+                        </select>
+                        </form>
+                    </li>
+                </ul>
+            </div>        
+                        <label for="memberInning">start at: </label>
+                        <input type="number" id="memberInning" name="nthMeeting" scale=1 max=10 min=1 placeholder="inning" value=1 required><br>
+
+                        <label for="memberAbsence">number of Absence: </label>
+                        <input type="number" id="memberAbsence" name="numberOfabsence" scale=1 max=10 min=1 placeholder="number of absence" value=findpeople.numbOfAbsence required><br>
+
+                        <label for="memberEntryFee">Entry fee: </label>
+                        <input ttype="number" name="startFee" min=0 value=findpeople.startFee placeholder="entry fee" id="memberEntryFee" required><br>
+
+                        <input type="submit" value="Edit"><br>
+
+                        
+                        <button>Delete</button>
+                        
+                        <h1>not found</h1>
+                        
+           
+
+
+    </nav>
+</body>
+</head>
+</html>

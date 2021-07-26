@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body {margin-top:50px; width:100%; text-align: center;line-height:2.5rem;}
+
+form {width:100%}
+form fieldset {margin-bottom:10px; border:1px solid black;}
+form legend {font-size:15px; font-weight:600;}
+form ul li {font-size:12px; margin:10px 0; height:25px;}
+li label {width:120px; float:left; font-size:15px; font-weight:bold; line-height:25px;}
+
+.log {background:none; border-radius:5px; border-color:#999; width:7rem; height:2rem; cursor:pointer; color:#444;}
+.log:hover {box-shadow:1px 1px 3px#000;}
+
+.socialLogin button {background:#25c800; border-radius:5px; border:none; color:#fff; padding:10px 20px; cursor:pointer;}
+.socialLogin button:hover {box-shadow:2px 1px 5px#000;}
+
+.joinBox button {background:none; border-radius:5px; border-color:#999; width:7rem; height:2rem; cursor:pointer; color:#444;}
+.joinBox button:hover {box-shadow:1px 1px 3px#000;}
+
+
+
+@media screen and (min-width:769px){
+
+}
+
+
+
+@media screen and (min-width:1200px){
+
+}
